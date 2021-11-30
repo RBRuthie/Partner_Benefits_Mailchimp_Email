@@ -99,10 +99,10 @@
 			padding:0 9px;
 		}
 		#footerContent{
-			padding-top:27px;
+			/* padding-top:27px; */
 			padding-bottom:18px;
 		}
-		#templateHeader,#templateBody,#templateFooter{
+		#templateBody,#templateFooter{
 			padding-right:18px;
 			padding-left:18px;
 		}
@@ -265,7 +265,7 @@
 	*/
   #templateHeader a,#templateHeader img{
 			/*@editable*/width:100%;
-			/*@editable*/height:autol;
+			/*@editable*/height:auto;
 		}
 	/*
 
@@ -309,27 +309,12 @@
 		}
 	/*
 
-	@tab Footer
-	@section Footer Style
-	*/
-		#templateFooter{
-			/*@editable*/background-color:#FAFAFA;
-			/*@editable*/background-image:none;
-			/*@editable*/background-repeat:no-repeat;
-			/*@editable*/background-position:center;
-			/*@editable*/background-size:cover;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:36px;
-			/*@editable*/padding-bottom:9px;
-		}
-	/*
 
   	@tab Footer
 	@section Footer Style
 	*/
   #templateFooter{
-			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/background-color:#4ab8b4;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -383,7 +368,7 @@
 	@section Footer Text
 	*/
 		#footerContent,#footerContent p{
-			/*@editable*/color:#656565;
+			/*@editable*/color:#ffffff;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:12px;
 			/*@editable*/line-height:150%;
@@ -405,7 +390,7 @@
 	@section Utility Bar Style
 	*/
 		#utilityBar{
-			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/background-color:#4ab8b4;
 			/*@editable*/border:0;
 			/*@editable*/padding-top:9px;
 			/*@editable*/padding-bottom:9px;
@@ -428,169 +413,247 @@
 	@section Utility Bar Link
 	*/
 		#utilityBar a,#utilityBar p a{
-			/*@editable*/color:#656565;
+			/*@editable*/color:#ffffff;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
 
 
-	@media only screen and (max-width: 480px){
-		body,table,td,p,a,li,blockquote{
-			-webkit-text-size-adjust:none !important;
-		}
+		
 
-}	
+/*****************************************   
+								MEDIA QUERIES 
+*******************************************/
 @media only screen and (max-width: 480px){
-		body{
-			width:100% !important;
-			min-width:100% !important;
-		}
-
+body,table,td,p,a,li,blockquote{
+	-webkit-text-size-adjust:none !important;
 }
-@media only screen and (max-width: 480px){
-		.templateImage{
-			width:100% !important;
-		}
-
-}
-@media only screen and (max-width: 480px){
-		.columnContainer{
-			max-width:100% !important;
-			width:100% !important;
-		}
-
 }	
+				/* body */
 @media only screen and (max-width: 480px){
-		.mobileHide{
-			display:none;
-		}
+body{
+	width:100% !important;
+	min-width:100% !important;
+}
+}
+				/* template header Image */
+@media only screen and (max-width: 480px){
+.templateImage-header{
+	width:100% !important;
+}
+}
 
-}	@media only screen and (max-width: 480px){
-		.utilityLink{
-			display:block;
-			padding:9px 0;
-		}
+				/* template Image */
+@media only screen and (max-width: 480px){
+.templateImage{
+	width: 70% !important;
+ }
+}
+				/* column container */
+@media only screen and (max-width: 480px){
+.columnContainer{
+	max-width:100% !important;
+	width:100% !important;
+ }
+}	
+				/* movile hide class */
+@media only screen and (max-width: 480px){
+.mobileHide{
+	display:none;
+ }
+}	
 
-}	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Heading 1
-	*/
-		h1{
-			/*@editable*/font-size:22px !important;
-			/*@editable*/line-height:175% !important;
-		}
+				/* utility link & Heading */
+@media only screen and (max-width: 480px){
+.utilityLink{
+	display:block;
+	padding:9px 0;
+ }
+}	
 
-}	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Heading 2
-	*/
-		h2{
-			/*@editable*/font-size:20px !important;
-			/*@editable*/line-height:175% !important;
-		}
-
-}	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Heading 3
-	*/
-		h3{
-			/*@editable*/font-size:18px !important;
-			/*@editable*/line-height:175% !important;
-		}
-
-}	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Heading 4
-	*/
-		h4{
-			/*@editable*/font-size:16px !important;
-			/*@editable*/line-height:175% !important;
-		}
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Heading 1
+*/
+h1{
+	/*@editable*/font-size:22px !important;
+	/*@editable*/line-height:175% !important;
+}
 
 }	
 
 @media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Preheader Visibility
-	*/
-		#templatePreheader{
-			/*@editable*/display:block !important;
-		}
+/*
+@tab Mobile Styles
+@section Heading 2
+*/
+h2{
+	/*@editable*/font-size:20px !important;
+	/*@editable*/line-height:175% !important;
 }
-
-	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Preheader Text
-	*/
-		#templatePreheader,#templatePreheader p{
-			/*@editable*/font-size:14px !important;
-			/*@editable*/line-height:150% !important;
-		}
-}
-
-	@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Header Text
-	*/
-		#templateHeader,#templateHeader p{
-			/*@editable*/font-size:16px !important;
-			/*@editable*/line-height:150% !important;
-		}
-
-}
-@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Body Text
-	*/
-		#templateBody,#templateBody p{
-			/*@editable*/font-size:16px !important;
-			/*@editable*/line-height:150% !important;
-		}
-
-}
-
-@media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Footer Text
-	*/
-		#templateFooter,#templateFooter p{
-			/*@editable*/font-size:14px !important;
-			/*@editable*/line-height:150% !important;
-		}
 
 }	
 
 @media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Social Bar Text
-	*/
-		#socialBar,#socialBar p{
-			/*@editable*/font-size:14px !important;
-			/*@editable*/line-height:150% !important;
-		}
+/*
+@tab Mobile Styles
+@section Heading 3
+*/
+h3{
+	/*@editable*/font-size:18px !important;
+	/*@editable*/line-height:175% !important;
+}
+
 }	
 
 @media only screen and (max-width: 480px){
-	/*
-	@tab Mobile Styles
-	@section Utility Bar Text
-	*/
-		#utilityBar,#utilityBar p{
-			/*@editable*/font-size:14px !important;
-			/*@editable*/line-height:150% !important;
-		}
+/*
+@tab Mobile Styles
+@section Heading 4
+*/
+h4{
+	/*@editable*/font-size:16px !important;
+	/*@editable*/line-height:175% !important;
+}
+
+}	
+
+
+				/*  template Preheader Visibility & Text */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Preheader Visibility
+*/
+#templatePreheader{
+	/*@editable*/display:block !important;
+}
+}
+
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Preheader Text
+*/
+#templatePreheader,#templatePreheader p{
+	/*@editable*/font-size:14px !important;
+	/*@editable*/line-height:150% !important;
+}
+}
+
+				/* template Header Text  */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Header Text
+*/
+#templateHeader,#templateHeader p{
+	/*@editable*/font-size:16px !important;
+	/*@editable*/line-height:150% !important;
+}
 
 }
+
+				/*  template Body Text  */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Body Text
+*/
+#templateBody, #templateBody p{
+	/*@editable*/font-size:16px !important;
+	/*@editable*/text-align: center !important;
+	/*@editable*/line-height: 150% !important;
+	/*@editable*/padding: 0 10px 0 10px !important;
+ }
+}
+
+				/*  list items table */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section intro paragrahp
+*/
+ #templateBody, .intro{
+		/*@editable*/margin: 13px -20px 0 -20px !important;
+ }
+}
+
+				/*  list items table */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section list items table
+*/
+ .AATBS, .ZUR, .Site, .Notes, .SessionLab{
+		/*@editable*/margin: 25px 0 35px 0 !important;
+ }
+}
+
+				/*  button */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Button
+*/
+
+.btn-table{
+		/*@editable*/margin-bottom: 4px !important;
+}
+
+.btn{
+		/*@editable*/font-size: 15px !important;
+		/*@editable*/padding: 0 22px 0 22px !important;
+		/*@editable*/margin-bottom: 22px !important;
+ }
+}
+
+				/* template Footer Text */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Footer Text
+*/
+#templateFooter,#templateFooter p{
+	/*@editable*/font-size:14px !important;
+	/*@editable*/line-height:150% !important;
+}
+
+}	
+
+				/* social Bar Text */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Social Bar Text
+*/
+#socialBar,#socialBar p{
+	/*@editable*/font-size:14px !important;
+	/*@editable*/line-height:150% !important;
+}
+}	
+
+				/* utility Bar Text */
+@media only screen and (max-width: 480px){
+/*
+@tab Mobile Styles
+@section Utility Bar Text
+*/
+#utilityBar,#utilityBar p{
+	/*@editable*/font-size:14px !important;
+	/*@editable*/line-height:150% !important;
+}
+
+}
+
+
+
+
+
+
+
+
 </style>
 </head>
 
@@ -607,70 +670,21 @@
     <![endif]-->
         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 
-
-            <!-- BEGIN PREHEADER // -->
-            <tr>
-                <td valign="top" id="templatePreheader">
-
-                    <!-- BEGIN MODULE: STANDARD PREHEADER // -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                            <td valign="top">
-                                <!--[if mso]>
-                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-                                <tr>
-                                <td valign="top" width="384" style="width:384px;">
-                                <![endif]-->
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:384px;" width="100%" class="columnContainer">
-                                    <tr>
-                                        <td valign="top">
-                                            <div mc:edit="preheader_leftcol_content">
-                                           
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!--[if mso]>
-                                </td>
-                                <td valign="top" width="180" style="width:180px;">
-                                <![endif]-->
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:180px;" width="100%" class="columnContainer">
-                                    <tr>
-                                        <td valign="top">
-                                            <div mc:edit="preheader_rightcol_content">
-                                                <p><a href="*|ARCHIVE|*" target="_blank">View email in your browser</a></p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!--[if mso]>
-                                </td>
-                                </tr>
-                                </table>
-                                <![endif]-->
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- // END MODULE: STANDARD PREHEADER -->
-
-                </td>
-            </tr>
-
             <!-- BEGIN HEADER // -->
-            <tr>
-                <td valign="top" id="templateHeader">
-                    <img 
-                    src="img-pb/perks_img.png" 
-                    style="max-width:564px;" 
-                    class="templateImage" 
-                    mc:label="header_image" 
-                    mc:edit="header_image" 
-                    mc:allowdesigner mc:allowtext
-                    >
-                </td>
-            </tr>
+						<tr>
+							<td valign="top" id="templateHeader">
+									<img 
+									src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/perks_img.png?raw=true" 
+									style="max-width:600px;" 
+									class="templateImage-header" 
+									mc:label="header_image" 
+									mc:edit="header_image" 
+									mc:allowdesigner mc:allowtext
+									>
+							</td>
+						</tr>
 
-						<!-- detailed items listing & button -->
+						<!-- TITLE  /  ITEM LISTING /  BUTTON  /  ICONS  / FOOTER -->
             <tr>
               <td valign="top" id="templateBody">
 								<table style="background: #ffffff;">
@@ -681,11 +695,11 @@
 										<tr>
 												<td valign="top" >
 														<div mc:edit="body_content">
-																<h1>Hi, xxx</h1>
+																<h1>Hi *|TITLE|* *|FNAME|* *|LNAME|*,</h1>
 																<!-- <h2>Heading 2</h2>
 																<h3>Heading 3</h3>
 																<h4>Heading 4</h4> -->
-																<p>
+																<p class="intro">
 																	TogetherWell appreciates your commitment to making mental health more accessible. We want to help our members create their best work. That's why we want to let you know about some of the perks that we offer our members.
 																</p>
 														</div>
@@ -694,7 +708,7 @@
 
 
 										<!--ROW 1: AATBS -->
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" class="AATBS" >
 											<tr>
 													<td valign="top" valign="top" >
 															<!--[if mso]>
@@ -707,7 +721,7 @@
 																			<td valign="top">
 																					<div mc:edit="preheader_leftcol_content_AATBS">
 																						<img 
-																						src="img-pb/AATBS_no_bk_img1.png"
+																						src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/AATBS_no_bk_img1.png?raw=true"
 																						style=" display: block;
 																						margin-left: auto;
 																						margin-right: auto;
@@ -746,7 +760,7 @@
 										</table>
 
 										<!--ROW 2: ZUR -->
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" class="ZUR" >
 											<tr>
 													<td valign="top" valign="top" >
 															<!--[if mso]>
@@ -759,7 +773,7 @@
 																			<td valign="top">
 																					<div mc:edit="preheader_leftcol_content_ZUR">
 																						<img 
-																						src="img-pb/zur_institure_img.png"
+																						src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/zur_institure_img.png?raw=true"
 																						style="display: block;
 																						margin-left: auto;
 																						margin-right: auto;
@@ -768,6 +782,7 @@
 																						mc:label="header_image" 
 																						mc:edit="header_image" 
 																						mc:allowdesigner mc:allowtext
+																						>
 																					</div>
 																			</td>
 																	</tr>
@@ -796,8 +811,8 @@
 											</tr>
 										</table>
 	
-										<!--ROW 3: Therapy Sites-->
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<!--ROW 3: Therapy Sites -->
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" class="Sites" >
 											<tr>
 													<td valign="top" valign="top" >
 															<!--[if mso]>
@@ -810,7 +825,7 @@
 																			<td valign="top">
 																					<div mc:edit="preheader_leftcol_content_Therapy-Sites">
 																						<img 
-																						src="img-pb/therapy_sites_img.png"
+																						src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/therapy_sites_img.png?raw=true"
 																						style=" display: block;
 																						margin-left: auto;
 																						margin-right: auto;
@@ -819,6 +834,7 @@
 																						mc:label="header_image" 
 																						mc:edit="header_image" 
 																						mc:allowdesigner mc:allowtext
+																						>
 																					</div>
 																			</td>
 																	</tr>
@@ -847,8 +863,8 @@
 											</tr>
 										</table>
 	
-										<!--ROW 4: Therapy Notes-->
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<!--ROW 4: Therapy Notes -->
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" class="Notes" >
 											<tr>
 													<td valign="top" valign="top" >
 															<!--[if mso]>
@@ -861,7 +877,7 @@
 																			<td valign="top">
 																					<div mc:edit="preheader_leftcol_content_Therapy-Notes">
 																						<img 
-																						src="img-pb/therapy_notes_img.png"
+																						src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/therapy_notes_img.png?raw=true"
 																						style=" display: block;
 																						margin-left: auto;
 																						margin-right: auto;
@@ -870,6 +886,7 @@
 																						mc:label="header_image" 
 																						mc:edit="header_image" 
 																						mc:allowdesigner mc:allowtext
+																						>
 																					</div>
 																			</td>
 																	</tr>
@@ -898,8 +915,8 @@
 											</tr>
 										</table>
 	
-										<!--ROW 5: SessionLab-->
-										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<!--ROW 5: SessionLab -->
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" class="SessionLab"  >
 											<tr>
 													<td valign="top" valign="top" >
 															<!--[if mso]>
@@ -912,7 +929,7 @@
 																			<td valign="top">
 																					<div mc:edit="preheader_leftcol_content">
 																						<img 
-																						src="img-pb/session_lab_img.png"
+																						src="https://github.com/RBRuthie/Partner_Benefits_Mailchimp_Email/blob/main/img/session_lab_img.png?raw=true"
 																						style=" display: block;
 																						margin-left: auto;
 																						margin-right: auto;
@@ -921,6 +938,7 @@
 																						mc:label="header_image" 
 																						mc:edit="header_image" 
 																						mc:allowdesigner mc:allowtext
+																						>
 																					</div>
 																			</td>
 																	</tr>
@@ -949,33 +967,157 @@
 											</tr>
 
 											<!-- Button -->
-											<tr>
-												<td>
-													<div style="text-align: center; margin: 50px 0 30px 0; " >
+											<!-- <tr>
+												<td style="font-family:Poppins, sans-serif; font-size: 24px; font-weight:600; line-height:24px;  padding-left:33px;padding-right:33px; border-radius: 35px; border:2px solid #1574a8; background:#1574a8" mc:edit="button">
+													<div style="text-align: center; margin: 50px 0 50px 0; " >
 														<a href="https://www.togetherwell.org/" target="_blank" 
-														style="
-														font-size: 25px; 
-														background-color:#145b75; 
-														color: #fff; 
-														padding: 15px 20px; 
-														border-radius: 11px; 
-														text-decoration:none;"
-														mc:label="header-button" 
-														mc:edit="header-button" 
-														mc:allowdesigner mc:allowtext
+														
+
+														style="color: #fff; text-decoration: none;"
 														>
-														Get to know us!
+														
+														our Partners!
 														</a>
 													</div>
 													
+												</td>
+											</tr> -->
+
+											<!-- button -->
+											<tr>
+												<td align="center">
+													<table align="center" border="0" cellpadding="0" cellspacing="0" class="btn-table" style="margin: 30px;">
+															<!-- button -->
+															<tr>
+																<td class="btn" align="center" height="46" 
+																style="
+																font-family:Poppins, sans-serif; 
+																font-size: 19px; 
+																font-weight:600; 
+																line-height:24px;  
+																padding-left:33px; 
+																padding-right:33px; 
+																border-radius: 6px;  
+																background:#1574a8" 
+																mc:edit="button"
+																>
+																	<a href="https://www.togetherwell.org/partner" target="_blank" style="color: #fff; text-decoration: none; text-transform: uppercase; ">
+																		Claim your perks!
+																	</a>
+																</td>
+															</tr>
+													</table>
 												</td>
 											</tr>
 
 
 										</table>
-	
-										
 
+
+										<!--ROW 5: footer-->
+										<tr>
+											<td valign="top" id="templateFooter" >
+												<table border="0" cellpadding="0" cellspacing="0" width="100%"  >
+
+				
+													<!-- FOOTER: social media -->
+													<tr>
+														<td> <!-- align="center" valign="top" id="socialBar" -->
+																<div> <!--  mc:edit="social_bar" -->
+				
+																		
+				
+																		<!-- <td align="center" valign="middle" width="24" class="mcnFollowIconContent"> -->
+																			
+																			<!-- <a href="http://www.twitter.com/" target="_blank" class="mcnFollowIconContent"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
+				
+																			<a href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" tyle="display:inline-block;" height="24" width="24" class=""></a>
+																			
+																			<a href="http://mailchimp.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
+				
+																			<a href="http://www.twitter.com/" target="_blank" class="mcnFollowIconContent"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
+				
+																			<a href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
+																			
+																			<a href="http://mailchimp.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display:inline-block;" height="24" width="24" class="">
+																			</a> -->
+
+																		<!-- </td> -->
+				
+				
+				
+																		<!-- <a href="*|TWITTER:PROFILEURL|*" class="utilityLink">Follow on Twitter </a> -->
+				
+																		<!-- <span class="mobileHide"> &nbsp; | &nbsp; </span> -->
+														
+																		<!-- <a href="*|FACEBOOK:PROFILEURL|*" class="utilityLink">Friend on Facebook</a> -->
+														
+																		<!-- <span class="mobileHide"> &nbsp; | &nbsp; </span>
+																			-->
+																		<!-- <a href="*|FORWARD|*" class="utilityLink">Forward to a Friend</a> -->
+				
+																	
+															
+																</div>
+														</td>
+													</tr> 
+				
+													<!-- FOOTER: COPYRIGHTS -->
+													<tr>
+															<td valign="top" id="footerContent">
+																	<div mc:edit="footer_content">
+																			*|IF:LIST|*
+																			<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+																			<br>
+																			<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+																			*|LIST:DESCRIPTION|*
+																			
+				
+																			<br>
+																			<strong>Our mailing address is:</strong>
+																			<br> *|HTML:LIST_ADDRESS_HTML|*
+																			<br>
+																			<!-- *|END:IF|* -->
+																			*|ELSE:|*
+																			<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+																			<em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
+																			<br>
+				
+				
+																			<strong>Our mailing address is:</strong>
+																			<br> *|USER:ADDRESS_HTML|*
+																			<!-- *|END:IF|* -->
+																			*|END:IF|*
+																	</div>
+																	<div mc:edit="monkeyrewards">
+																			*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+																	</div>
+															</td>
+													</tr>
+				
+													<!-- FOOTER: SUBSCRIPTION -->
+													<tr>
+															<td valign="top" id="utilityBar">
+																	<div mc:edit="utility_bar">
+																			<a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a>
+																			
+																			<span class="mobileHide"> | </span>
+																			
+																			<a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a>
+				
+																			<!-- *|IFNOT:ARCHIVE_PAGE|* --><span class="mobileHide"> | </span><a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a>
+																			<!-- *|END:IF|* -->
+																	</div>
+															</td>
+													</tr>
+				
+												</table>
+												<!-- // BEGIN MODULE: STANDARD FOOTER -->
+				
+											</td>
+										</tr>
+
+					
 										</td>
 									</tr>
 								</table>
@@ -986,111 +1128,7 @@
               </td>
             </tr>
 
-            <!-- BEGIN FOOTER // -->
-            <tr>
-							<td valign="top" id="templateFooter">
 
-								<!-- BEGIN MODULE: STANDARD FOOTER // -->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-
-<!-- FOOTER: social media -->
-									<tr>
-										<td align="center" valign="top" id="socialBar">
-												<div mc:edit="social_bar">
-
-														
-
-														<!-- <td align="center" valign="middle" width="24" class="mcnFollowIconContent"> -->
-															
-															<a href="http://www.twitter.com/" target="_blank" class="mcnFollowIconContent"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
-
-															<a href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" tyle="display:inline-block;" height="24" width="24" class=""></a>
-															
-															<a href="http://mailchimp.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
-
-															<a href="http://www.twitter.com/" target="_blank" class="mcnFollowIconContent"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
-
-															<a href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" style="display:inline-block;" height="24" width="24" class=""></a>
-															
-															<a href="http://mailchimp.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display:inline-block;" height="24" width="24" class="">
-															</a>
-														<!-- </td> -->
-
-
-
-														<!-- <a href="*|TWITTER:PROFILEURL|*" class="utilityLink">Follow on Twitter </a> -->
-
-														<!-- <span class="mobileHide"> &nbsp; | &nbsp; </span> -->
-										
-														<!-- <a href="*|FACEBOOK:PROFILEURL|*" class="utilityLink">Friend on Facebook</a> -->
-										
-														<!-- <span class="mobileHide"> &nbsp; | &nbsp; </span>
-															-->
-														<!-- <a href="*|FORWARD|*" class="utilityLink">Forward to a Friend</a> -->
-
-													
-											
-												</div>
-										</td>
-									</tr> 
-
-<!-- FOOTER: COPYRIGHTS -->
-									<tr>
-											<td valign="top" id="footerContent">
-													<div mc:edit="footer_content">
-															*|IF:LIST|*
-															<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
-															<br>
-															<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-															*|LIST:DESCRIPTION|*
-															
-
-															<br>
-															<strong>Our mailing address is:</strong>
-															<br> *|HTML:LIST_ADDRESS_HTML|*
-															<br>
-															<!-- *|END:IF|* -->
-															*|ELSE:|*
-															<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-															<em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
-															<br>
-
-
-															<strong>Our mailing address is:</strong>
-															<br> *|USER:ADDRESS_HTML|*
-															<!-- *|END:IF|* -->
-															*|END:IF|*
-													</div>
-													<div mc:edit="monkeyrewards">
-															*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
-													</div>
-											</td>
-									</tr>
-
-<!-- FOOTER: SUBSCRIPTION -->
-									<tr>
-											<td valign="top" id="utilityBar">
-													<div mc:edit="utility_bar">
-															<a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a>
-															
-															<span class="mobileHide"> | </span>
-															
-															<a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a>
-
-															<!-- *|IFNOT:ARCHIVE_PAGE|* --><span class="mobileHide"> | </span><a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a>
-															<!-- *|END:IF|* -->
-													</div>
-											</td>
-									</tr>
-
-								</table>
-								<!-- // BEGIN MODULE: STANDARD FOOTER -->
-
-							</td>
-            </tr>
-            <!-- // END FOOTER -->
-
-						
         </table>
     <!--[if gte mso 9]>
     </td>
@@ -1105,3 +1143,8 @@
 </body>
 
 </html>
+
+
+<!-- 
+	p!R01231991978
+ -->
