@@ -1,11 +1,10 @@
 # TogetherWell_Partner_Benefits_Email_
-  Created a responsive Vetenary Hospital themed Newsletter using::
-  HTML - CSS
+  Partner Benefits Perks email provides a listing of perks offered by the organization. used:
+  HTML - CSS - Mailchimp Template Language
 
 
 <table>
   <tr>
-    <td>Main Section of Email</td>
      <td>1st Design</td>
      <td>2nd Design</td>
   </tr>
