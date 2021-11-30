@@ -1,5 +1,7 @@
 # TogetherWell_Partner_Benefits_Email_
-  Partner Benefits Perks email provides a listing of perks offered by the organization. used:
+  Partner Benefits Perks email provides a listing of perks offered by the organization. 
+  
+  Created with:
   HTML - CSS - Mailchimp Template Language
 
 
